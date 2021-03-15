@@ -10,13 +10,13 @@ final class Config
 
 
     //url设置
-    const WCS_PUT_URL	= 'http://PUT_URL'; //WCS put 上传路径
-    const WCS_GET_URL	= 'http://GET_URL';    //WCS get 上传路径
-    const WCS_MGR_URL	= 'http://MGR_URL';    //WCS MGR 路径
+    const WCS_PUT_URL	= env('WCS_PUT_URL'); //WCS put 上传路径
+    const WCS_GET_URL	= env('WCS_PUT_URL');    //WCS get 上传路径
+    const WCS_MGR_URL	= env('WCS_PUT_URL');    //WCS MGR 路径
 
     //access key and secret key
-    const WCS_ACCESS_KEY	= '';
-    const WCS_SECRET_KEY	= '';
+    const WCS_ACCESS_KEY	= env('WCS_ACCESS_KEY');
+    const WCS_SECRET_KEY	= env('WCS_SECRET_KEY');
 
     //token的deadline,默认是1小时,也就是3600s
     const  WCS_TOKEN_DEADLINE = 3600;
